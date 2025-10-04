@@ -58,10 +58,10 @@
 <!-- About me -->
 <section id="about">
     <div class="about-container">
-        <div class="center-text" data-aos="fade-up" data-aos-duration="1100">
+        <div class="center-text" data-aos="none" data-aos-duration="1100">
             <h2>ᴀʙᴏᴜᴛ ᴍᴇ</h2>
         </div>
-        <div class="about-content" data-aos="fade-up" data-aos-duration="1500">
+        <div class="about-content" data-aos="none" data-aos-duration="1500">
             <a href="https://sekolahloka.com/data/sma-negeri-04-palembang/" class="about-box-link">
                 <div class="about-box">
                     <img src="images-removebg-preview.png" alt="students from">
@@ -76,7 +76,7 @@
                     <p>You know that humans need money, yes, that's why I work there</p>
                 </div>
             </a>
-            <a href="https://tako.id/Dilsuow" class="about-box-link">
+            <a href="https://tako.id/Dilsuoww" class="about-box-link">
                 <div class="about-box">
                     <img src="images-removebg-preview(1).png" alt="you ask social media?">
                     <h3>My Sosmed</h3>
@@ -89,10 +89,10 @@
 <!-- Project -->
 <section id="project">
     <div class="project-container">
-        <div class="center-text" data-aos="fade-up" data-aos-duration="1500">
+        <div class="center-text" data-aos="none" data-aos-duration="1500">
             <h2>ᴍʏ ᴘʀᴏᴊᴇᴄᴛ</h2>
         </div>
-        <div class="project-content" data-aos="fade-up" data-aos-duration="1500">
+        <div class="project-content" data-aos="none" data-aos-duration="1500">
             <!-- Project 1 -->
             <div class="project-box">
                     <img src="web-developer-pengertian-tugas-skill-dan-contohnya-295345.png" alt="Project 1">
@@ -135,7 +135,7 @@
       AOS.init({offset:0});
     </script>
     <script src="script.js"></script>
-   <!-- Tombol Panah ke Header -->
+
 <a href="#home" class="back-to-top" id="backToTop">
     <i class="fa-solid fa-arrow-up"></i>
 </a>
@@ -144,7 +144,7 @@
     const backToTopButton = document.getElementById('backToTop');
 
     window.addEventListener('scroll', () => {
-        // Jika sudah scroll lebih dari 300px dari atas, tampilkan tombol
+
         if (window.scrollY > 300) {
             backToTopButton.classList.add('show');
         } else {
@@ -153,7 +153,7 @@
     });
 </script>
 <script>
-    // Data untuk slider
+
     const slides = [
         {
             image: "faruzan.jpg",
@@ -161,7 +161,7 @@
         },
         {
             image: "im.png",
-            description: "FUNFACT: but you know that Fadhil already has a girlfriend faruzan."
+            description: "FUNFACT: but you know that Fadhil already has a girlfriend melaa."
         },
         {
             image: "1900x1900-000000-80-0-0.jpg",
@@ -185,34 +185,29 @@
         }
     ];
 
-    // Elemen slider
     const sliderImage = document.getElementById("slider-image");
     const sliderDescription = document.getElementById("slider-description");
     const prevButton = document.getElementById("prev-slide");
     const nextButton = document.getElementById("next-slide");
 
-    // Indeks slide saat ini
+
     let currentSlide = 0;
 
-    // Fungsi untuk memperbarui slider
     function updateSlider(index) {
         sliderImage.src = slides[index].image;
         sliderDescription.textContent = slides[index].description;
     }
 
-    // Event listener untuk tombol Previous
     prevButton.addEventListener("click", () => {
         currentSlide = (currentSlide - 1 + slides.length) % slides.length;
         updateSlider(currentSlide);
     });
 
-    // Event listener untuk tombol Next
     nextButton.addEventListener("click", () => {
         currentSlide = (currentSlide + 1) % slides.length;
         updateSlider(currentSlide);
     });
 
-    // Inisialisasi slider
     updateSlider(currentSlide);
 </script>
 <footer>
@@ -221,6 +216,4 @@
     </div>
 </footer>
 </body>
-
 </html>
-
