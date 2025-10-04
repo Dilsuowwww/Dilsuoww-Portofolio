@@ -11,61 +11,59 @@ body{
     overflow: auto;
     background-color: #1d1d1d;
 }
-/* Gaya untuk navbar */
 nav {
     width: 100%;
-    height: 12vh; /* Tinggi navbar ditingkatkan agar lebih melebar ke bawah */
-    position: fixed; /* Navbar tetap di atas */
+    height: 12vh;
+    position: fixed;
     top: 0;
-    z-index: 1000; /* Pastikan navbar berada di atas elemen lainnya */
-    background-color: #1d1d1d; /* Sama dengan background body */
+    z-index: 1000;
+    background-color: #1d1d1d;
     display: flex;
-    justify-content: center; /* Posisikan konten di tengah secara horizontal */
-    align-items: center; /* Posisikan konten di tengah secara vertikal */
+    justify-content: center;
+    align-items: center;
 }
 
-/* Gaya untuk kontainer navbar */
+
 .nav-container {
     width: 100%;
-    max-width: 1200px; /* Tetapkan lebar maksimum untuk kontainer */
+    max-width: 1200px;
     height: 100%;
     margin-right: 150px;
     display: flex;
-    justify-content: flex-end; /* Posisikan elemen di tengah secara horizontal */
-    align-items: center; /* Posisikan elemen di tengah secara vertikal */
+    justify-content: flex-end;
+    align-items: center;
 }
 
-/* Gaya untuk link di navbar */
+
 .nav-container .links {
     display: flex;
-    gap: 20px; /* Jarak antar tautan */
-    justify-content: center; /* Pusatkan tautan secara horizontal */
-    align-items: center; /* Pusatkan tautan secara vertikal */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-container .links a {
     position: relative;
-    font-size: 1.1rem; /* Ukuran font sedikit lebih besar */
+    font-size: 1.1rem;
     color: white;
     text-decoration: none;
     font-weight: 400;
-    transition: color 0.1s linear; /* Percepat transisi warna */
-    padding: 10px 15px; /* Tambahkan padding untuk memperbesar area klik */
+    transition: color 0.1s linear;
+    padding: 10px 15px;
 }
 
-/* Tambahkan garis bawah animasi pada hover */
 .nav-container .links a::before {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 2px; /* Tinggi garis bawah */
+    height: 2px;
     background-color: #ff41ff;
-    transition: width 0.3s linear; /* Tetap dengan durasi ini untuk garis bawah */
+    transition: width 0.3s linear;
 }
 
 .nav-container .links a:hover {
-    color: #ff41ff; /* Warna teks berubah saat hover */
+    color: #ff41ff;
 }
 
 .nav-container .links a:hover::before {
@@ -79,10 +77,10 @@ section{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: flex-start; /* Posisikan elemen ke kiri */
-    align-items: center; /* Posisikan elemen ke tengah secara vertikal */
-    padding-left: 100px; /* Tambahkan jarak dari sisi kiri jika diperlukan */
-    padding-top: 50px; /* Tambahkan jarak dari atas */
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 100px;
+    padding-top: 50px;
 }
 .main-container .image{
     width: 500px;
@@ -115,15 +113,15 @@ section{
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Posisi ke kiri */
-  text-align: left; /* Teks ke kiri */
+  align-items: flex-start;
+  text-align: left;
 }
 
-/* Judul utama */
+
 .content h1 span {
   font-size: 3.6rem;
   font-weight: 800;
-  background: linear-gradient(to right, #ccc);
+  background: linear-gradient(to right, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -131,7 +129,7 @@ section{
   margin-bottom: -1rem;
 }
 
-/* Subjudul */
+
 .content .subtext {
   font-size: 1.5rem;
   color: #ccc;
@@ -139,7 +137,7 @@ section{
   margin-bottom: 2rem;
 }
 
-/* Paragraf */
+
 .hero-content .info,
 .content p {
   font-size: 1rem;
@@ -155,104 +153,104 @@ section{
     display: none;
     justify-content: center;
     align-items: center;
-    width: 3rem; /* Ukuran ikon yang proporsional */
-    height: 3rem; /* Ukuran ikon yang proporsional */
+    width: 3rem;
+    height: 3rem;
     background-color: transparent;
     border-radius: 50%;
     color: #8b8b8b;
-    margin: 10px 10px; /* Jarak antar ikon */
-    font-size: 1.5rem; /* Ukuran teks/icon di dalam */
+    margin: 10px 10px;
+    font-size: 1.5rem;
     transition: all 0.3s ease;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan awal */
-    border: 2px solid transparent; /* Stroke awal transparan */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
 }
 
 .social-links i:hover {
-    color: #ffffff; /* Ubah warna teks saat hover */
-    background-color: #ff41ff; /* Ubah warna latar belakang */
-    border: 2px solid #ff41ff; /* Tambahkan warna stroke */
-    box-shadow: 0 0 15px #ff41ff, 0 0 30px #ff41ff; /* Efek bercahaya di stroke */
+    color: #ffffff;
+    background-color: #ff41ff;
+    border: 2px solid #ff41ff;
+    box-shadow: 0 0 15px #ff41ff, 0 0 30px #ff41ff;
 }
 .content button {
-    width: 30%; /* Lebar tombol tetap */
-    height: 50px; /* Tinggi tombol lebih besar */
+    width: 30%;
+    height: 50px;
     margin: 25px;
     background-color: #ff41ff;
     color: #ffffff;
     border: 1px solid #ff41ff;
     outline: none;
-    font-size: 120%; /* Ukuran teks tetap */
+    font-size: 120%;
     font-weight: 700;
     border-radius: 5px;
     display: none;
     transition: 0.2s linear;
 }
-/* Gaya untuk section Services */
+
 #about {
     width: 100%;
     padding: 50px 20px;
-    background-color: #1d1d1d; /* Warna latar belakang */
+    background-color: #1d1d1d;
     text-align: center;
     box-sizing: border-box;
 }
 
-/* Gaya untuk judul */
+
 #about .center-text h2 {
     font-size: 2rem;
     color: #ffffff;
     margin-bottom: 30px;
-    margin-top: 60px; /* Tambahkan jarak atas */
+    margin-top: 60px;
 }
 
 #about .center-text h2 span {
-    color: #ff41ff; /* Warna aksen */
+    color: #ff41ff;
 }
 
-/* Kontainer untuk layanan */
+
 #about .about-content {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Jarak antar box */
-    flex-wrap: wrap; /* Agar responsif */
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-/* Gaya untuk setiap box layanan */
+
 #about .about-box {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px; /* Lebar tetap untuk setiap box */
+    width: 300px;
     text-align: center;
     border: 2px solid #ff41ff;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    color: #fff; /* Warna teks putih agar kontras dengan latar belakang */
+    color: #fff;
 }
 
-/* Efek hover untuk box layanan */
+
 #about .about-box:hover {
-    color: #ff41ff; /* Ubah warna teks */
-    border: 2px solid #ff41ff; /* Tambahkan border */
-    background-color: transparent; /* Ubah latar belakang menjadi transparan */
+    color: #ff41ff;
+    border: 2px solid #ff41ff;
+    background-color: transparent;
 }
 
-/* Gaya untuk gambar */
+
 #about .about-box img {
-    width: 80px; /* Lebar gambar lebih kecil */
-    height: 80px; /* Tinggi gambar lebih kecil */
+    width: 80px;
+    height: 80px;
     border-radius: 10px;
-    margin-bottom: 30px; /* Tambahkan spasi ke bawah */
-    object-fit: cover; /* Pastikan gambar tetap proporsional */
+    margin-bottom: 30px;
+    object-fit: cover;
 }
 
-/* Gaya untuk judul layanan */
+
 #about .about-box h3 {
     font-size: 1.5rem;
     color: #b1b1b1;
-    margin-bottom: 15px; /* Tambahkan spasi ke bawah */
+    margin-bottom: 15px;
 }
 
-/* Gaya untuk deskripsi layanan */
+
 #about .about-box p {
     font-size: 1rem;
     color: #ffffff;
@@ -261,105 +259,104 @@ section{
     text-align: left;
 }
 
-/* Gaya untuk tombol link */
+
 #about .about-box a {
     font-size: 1rem;
-    color: #ffffff; /* Warna teks awal */
-    text-decoration: none; /* Hilangkan garis bawah default */
+    color: #ffffff;
+    text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Rata kiri */
+    justify-content: flex-start;
     gap: 5px;
-    transition: color 0.3s ease; /* Transisi halus untuk warna */
+    transition: color 0.3s ease;
     margin-top: 30px;
     margin-bottom: 10px;
 
 }
 
-/* Efek hover untuk link */
+
 #about .about-box a:hover {
-    color: #ff41ff; /* Warna teks berubah saat hover */
+    color: #ff41ff;
 }
 
-/* Garis bawah animasi */
+
 #about .about-box a::after {
     position: absolute;
-    bottom: -2px; /* Posisikan di bawah teks */
+    bottom: -2px;
     left: 0;
-    width: 0%; /* Awalnya garis tidak terlihat */
-    height: 1px; /* Ketebalan garis */
-    background-color: #ff41ff; /* Warna garis */
-    transition: width 0.3s ease; /* Animasi lebar garis */
+    width: 0%;
+    height: 1px;
+    background-color: #ff41ff;
+    transition: width 0.3s ease;
 }
 
-/* Gaya untuk section Project */
+
 #project {
     width: 100%;
     padding: 50px 20px;
-    background-color: #1d1d1d; /* Warna latar belakang */
+    background-color: #1d1d1d;
     text-align: center;
     box-sizing: border-box;
 }
 
-/* Gaya untuk judul */
+
 #project .center-text h2 {
     font-size: 2rem;
     color: #ffffff;
     margin-bottom: 30px;
-    margin-top: 40px; /* Tambahkan jarak atas */
+    margin-top: 40px;
 }
 
 #project .center-text h2 span {
-    color: #ff41ff; /* Warna aksen */
+    color: #ff41ff;
 }
 
-/* Kontainer untuk project */
+
 #project .project-content {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Jarak antar box */
-    flex-wrap: wrap; /* Agar responsif */
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-/* Gaya untuk setiap box project */
+
 #project .project-box {
-    background-color: rgba(0, 0, 0, 0.1); /* Transparansi */
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px; /* Tambahkan padding seperti about box */
-    width: 300px; /* Lebar tetap untuk setiap box */
+    padding: 20px;
+    width: 300px;
     text-align: left;
-    border: 2px solid #ff41ff; /* Tambahkan border */
+    border: 2px solid #ff41ff;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    color: #fff; /* Warna teks putih agar kontras dengan latar belakang */
+    color: #fff;
 }
 
-/* Efek hover untuk box project */
 #project .project-box:hover {
-    transform: scale(1); /* Perbesar box saat hover */
-    color: #ff41ff; /* Ubah warna teks */
-    border: 2px solid #ff41ff; /* Tambahkan border */
-    background-color: transparent; /* Ubah latar belakang menjadi transparan */
-    font-weight: 700; /* Tambahkan ketebalan teks */
+    transform: scale(1);
+    color: #ff41ff;
+    border: 2px solid #ff41ff;
+    background-color: transparent;
+    font-weight: 700;
 }
 
-/* Gaya untuk gambar di dalam project box */
+
 #project .project-box img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Pastikan gambar tetap proporsional */
-    border-radius: 10px; /* Tambahkan sudut melengkung */
-    margin-bottom: 15px; /* Tambahkan jarak bawah gambar */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-/* Gaya untuk judul project */
+
 #project .project-info h3 {
     font-size: 1.5rem;
     color: #b1b1b1;
     margin-bottom: 10px;
 }
 
-/* Gaya untuk deskripsi project */
+
 #project .project-info p {
     font-size: 1rem;
     color: #ffffff;
@@ -368,171 +365,162 @@ section{
     font-weight: normal;
 }
 
-/* Gaya untuk kategori project */
+
 #project .project-info .project-category {
     font-size: 0.9rem;
-    color: #ff41ff; /* Warna aksen */
+    color: #ff41ff;
     margin-bottom: 5px;
 }
 
-/* Gaya untuk tanggal project */
+
 #project .project-info small {
     font-size: 0.8rem;
     color: #ffffff;
     font-weight: normal;
 }
-/* Gaya untuk footer */
+
 footer {
-    background-color: #1b1b1b; /* Warna latar belakang footer */
-    color: #fff; /* Warna teks footer */
-    text-align: left; /* Pusatkan teks */
-    padding: 15px 0; /* Tambahkan ruang di atas dan bawah */
-    font-size: 0.9rem; /* Ukuran teks */
-    margin-top: 150px; /* Tambahkan jarak dari konten sebelumnya */
-    padding-left: 60px; /* Tambahkan jarak dari sisi kiri */
+    background-color: #1b1b1b;
+    color: #fff;
+    text-align: left;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    margin-top: 150px;
+    padding-left: 60px;
 }
 
 footer p {
-    margin: 0; /* Hilangkan margin default */
-    font-weight: 300; /* Berat teks normal */
+    margin: 0;
+    font-weight: 300;
 }
-/* Gaya untuk tombol panah ke atas */
+
 .back-to-top {
     position: fixed;
-    bottom: 30px; /* Jarak dari bawah */
-    right: 30px; /* Jarak dari kanan */
+    bottom: 30px;
+    right: 30px;
     width: 50px;
     height: 50px;
-    background-color: #bb00bb; /* Warna latar belakang */
-    color: #fff; /* Warna ikon */
-    border-radius: 50%; /* Membuat tombol berbentuk lingkaran */
+    background-color: #bb00bb;
+    color: #fff;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
-    opacity: 0; /* Awalnya tombol tidak terlihat */
-    visibility: hidden; /* Sembunyikan tombol */
-    z-index: 1000; /* Pastikan tombol berada di atas elemen lainnya */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0; 
+    visibility: hidden; 
+    z-index: 1000; 
 }
 
-/* Tampilkan tombol saat aktif */
+
 .back-to-top.show {
     opacity: 1;
     visibility: visible;
 }
 
-/* Efek hover pada tombol */
 .back-to-top:hover {
-    color: #ffffff; /* Ubah warna ikon */
+    color: #ffffff; 
 }
 
-/* Animasi fade-in dan slide-in untuk slider Fun Fact */
+
 @keyframes funFactFadeIn {
     0% {
-        opacity: 0; /* Awalnya tidak terlihat */
-        transform: translateY(20px); /* Geser sedikit ke bawah */
+        opacity: 0; 
+        transform: translateY(20px); 
     }
     100% {
-        opacity: 1; /* Sepenuhnya terlihat */
-        transform: translateY(0); /* Kembali ke posisi semula */
+        opacity: 1; 
+        transform: translateY(0); 
     }
 }
 
-/* Animasi saat scroll */
+
 @keyframes funFactScroll {
     0% {
-        transform: scale(0.9); /* Sedikit lebih kecil */
-        opacity: 0.5; /* Transparan */
+        transform: scale(0.9); 
+        opacity: 0.5;
     }
     100% {
-        transform: scale(1); /* Kembali ke ukuran normal */
-        opacity: 1; /* Sepenuhnya terlihat */
+        transform: scale(1); 
+        opacity: 1; 
     }
 }
 @keyframes fadeIn {
     0% {
-        opacity: 0; /* Mulai dari transparan */
+        opacity: 0; 
     }
     100% {
-        opacity: 1; /* Menjadi sepenuhnya terlihat */
+        opacity: 1; 
     }
 }
-/* Terapkan animasi saat slider muncul */
+
 .image-slider {
-    position: absolute; /* Tetap di posisi relatif terhadap section */
-    bottom: 20px; /* Jarak dari bawah */
-    right: 20px; /* Jarak dari kanan */
-    width: 250px; /* Lebar slider lebih kecil */
-    background-color: rgba(29, 29, 29, 0.8); /* Latar belakang semi-transparan */
-    color: #ffffff; /* Warna teks */
-    border-radius: 10px; /* Sudut melengkung */
-    box-shadow: 0 4px 15px rgba(29, 29, 29, 0.3); /* Bayangan */
-    overflow: hidden; /* Sembunyikan elemen yang keluar */
+    position: absolute; 
+    bottom: 20px;
+    right: 20px;
+    width: 250px; 
+    background-color: rgba(29, 29, 29, 0.8); 
+    color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(29, 29, 29, 0.3); 
+    overflow: hidden; 
     font-family: 'Poppins', sans-serif;
-    opacity: 0; /* Awalnya tidak terlihat */
-    animation: fadeIn 1s ease-in-out forwards; /* Animasi fade-in */
-    animation-delay: 0.9s; /* Tambahkan sedikit delay */
 }
 
-/* Kontainer gambar dan teks */
+
 .image-slider .slider-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 15px; /* Padding lebih kecil */
+    padding: 15px;
     text-align: center;
-    animation: funFactScroll 0.8s ease-in-out; /* Animasi saat scroll */
 }
 
-/* Gambar slider */
+
 .image-slider img {
     width: 100%;
-    height: 180px; /* Tinggi gambar lebih kecil */
-    object-fit: cover; /* Pastikan gambar tetap proporsional */
-    border-radius: 10px 10px 0 0; /* Sudut melengkung hanya di atas */
-    animation: funFactScroll 0.8s ease-in-out; /* Animasi saat scroll */
+    height: 180px;
+    object-fit: cover; 
+    border-radius: 10px 10px 0 0; 
 }
 
-/* Teks deskripsi */
+
 .image-slider .description {
-    margin-top: 8px; /* Jarak lebih kecil */
-    font-size: 0.8rem; /* Ukuran teks lebih kecil */
+    margin-top: 8px;
+    font-size: 0.8rem;
     line-height: 1.4;
-    animation: funFactScroll 0.8s ease-in-out; /* Animasi saat scroll */
 }
 
-/* Tombol navigasi slider */
+
 .image-slider .slider-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px; /* Padding lebih kecil */
-    background-color: rgba(29, 29, 29, 0.9); /* Latar belakang tombol */
-    animation: funFactScroll 0.8s ease-in-out; /* Animasi saat scroll */
+    padding: 8px;
+    background-color: rgba(29, 29, 29, 0.9);
 }
 
 .image-slider .slider-nav button {
-    background-color: transparent; /* Warna tombol */
-    color: #ffffff; /* Warna teks tombol */
-    border: #ff41ff 0.1px solid; /* Border tombol */
+    background-color: transparent; 
+    color: #ffffff; 
+    border: #ff41ff 0.1px solid; 
     border-radius: 5px;
-    padding: 5px 8px; /* Ukuran tombol lebih kecil */
+    padding: 5px 8px;
     cursor: pointer;
-    font-size: 0.7rem; /* Ukuran teks tombol lebih kecil */
+    font-size: 0.7rem; 
     transition: background-color 0.3s ease;
 }
 
 .image-slider .slider-nav button:hover {
-    color: #ffffff; /* Ubah warna teks tombol saat hover */
+    color: #ffffff; 
 }
-/* Remove blue underline from about box links */
+
 .about-box-link {
     text-decoration: none;
     color: inherit;
 }
 
-/* Update about box styles */
 #about .about-box {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -546,22 +534,21 @@ footer p {
     display: block;
 }
 
-/* Remove any remaining link styles */
 #about .about-box-link:visited,
 #about .about-box-link:active,
 #about .about-box-link:focus {
     color: inherit;
     text-decoration: none;
 }
-/* Hide hamburger menu on desktop */
+
 .hamburger-menu {
     display: none;
 }
 
-/* Mobile styles Hamburger */
+
 @media (max-width: 768px) {
     .nav-container .links {
-        display: none; /* Hide desktop menu */
+        display: none; 
     }
 
     .hamburger-menu {
@@ -572,10 +559,10 @@ footer p {
     z-index: 1001;
     cursor: pointer;
     padding: 15px;
-    border-radius: 10px; /* buat jadi rounded */
+    border-radius: 10px; 
 }
 
-/* Garis-garis icon hamburger */
+
 .hamburger-icon {
     width: 22px;
     height: 16px;
@@ -602,7 +589,7 @@ footer p {
     top: 14px;
 }
 
-    /* Hamburger animation */
+
     .hamburger-icon.active span:nth-child(1) {
         transform: translateY(10px) rotate(45deg);
     }
@@ -615,7 +602,7 @@ footer p {
         transform: translateY(-10px) rotate(-45deg);
     }
 
-    /* Mobile menu Hamburger */
+
 .mobile-menu {
     position: fixed;
     top: -100%;
@@ -625,8 +612,8 @@ footer p {
     background: rgba(29, 29, 29, 0.95);
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* ubah dari center ke flex-start */
-    padding-top: 250px; /* tambahkan padding agar tidak terlalu ke atas */
+    align-items: flex-start; 
+    padding-top: 250px; 
     z-index: 1000;
 }
 
@@ -638,7 +625,7 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px; /* beri jarak antar menu */
+    gap: 20px; 
 }
 
 .mobile-menu .links a {
@@ -652,9 +639,9 @@ footer p {
     color: #ff41ff;
 }
 }
-/* Mobile First Media Queries (320px - 768px) */
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
-    /* General Layout */
+
     body {
     min-height: 100vh;
     display: flex;
@@ -666,12 +653,12 @@ footer p {
         min-height: auto;
     }
 
-    /* Navigation */
+
     nav {
         height: 60px;
     }
 
-    /* Main Container */
+
     .main-container {
         padding: 80px 20px 40px;
         height: auto;
@@ -684,7 +671,7 @@ footer p {
         text-align: center;
     }
 
-    /* Content area adjustments */
+
     .content {
         width: 100%;
         text-align: center;
@@ -693,20 +680,20 @@ footer p {
         align-items: center;
     }
 
-    /* Main heading */
+
     .content h1 {
         font-size: 2rem;
         margin: 0px 0 0px;
     }
 
-    /* Developer text container */
+
     .fade-text {
         font-size: 1.4rem;
         align-items: left;
         justify-content: center;
     }
 
-    /* Description paragraph */
+
     .content p {
         font-size: 0.9rem;
         max-width: 100%;
@@ -717,20 +704,20 @@ footer p {
         line-height: 1.8;
     }
 
-    /* Social links container */
+
     .social-links {
         display: flex;
         gap: 5px;
     }
 
-    /* Social icons */
+
     .social-links i {
         width: 45px;
         height: 45px;
         font-size: 1.3rem;
     }
 
-    /* About Section */
+
     #about {
         padding: 40px 15px;
     }
@@ -767,7 +754,7 @@ footer p {
         text-align: center;
     }
 
-    /* Project Section */
+
     #project {
         padding: 40px 15px;
     }
@@ -801,7 +788,7 @@ footer p {
         font-size: 0.9rem;
     }
 
-    /* Image Slider */
+
     .image-slider {
         position: relative;
         width: 90%;
@@ -824,7 +811,7 @@ footer p {
         font-size: 0.7rem;
     }
 
-    /* Footer */
+
    footer {
     position: relative !important;
     bottom: 0 !important;
@@ -837,7 +824,7 @@ footer p {
         font-size: 0.8rem;
     }
 
-    /* Back to Top Button */
+
     .back-to-top {
         bottom: 20px;
         right: 20px;
@@ -846,7 +833,7 @@ footer p {
         font-size: 1rem;
     }
 
-    /* Mobile Menu */
+
     .mobile-menu .links {
         gap: 5px;
     }
@@ -855,7 +842,7 @@ footer p {
         font-size: 1rem;
     }
 
-    /* Extra Small Devices (320px - 375px) */
+
     @media screen and (max-width: 375px) {
         .content h1 {
             font-size: 1.5rem;
@@ -885,7 +872,7 @@ footer p {
   border-radius: 20px;
 }
 
-/* Judul utama */
+
 .content h1 span {
   font-size: 2.5rem;
   font-weight: 800;
@@ -897,7 +884,7 @@ footer p {
   margin-bottom: -10rem;
 }
 
-/* Subjudul (seperti "This is my Journey") */
+
 .content .subtext {
   font-size: 1.2rem;
   color: #ccc;
